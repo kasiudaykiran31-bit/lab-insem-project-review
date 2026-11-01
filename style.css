@@ -9,3 +9,9 @@ body.dark{--light:#0d1726;--card:#142238;--text:#e9f1fb;--muted:#9eb0c7;--line:#
 
 .register-link{text-align:center;margin:16px 0 0;color:var(--muted);font-size:13px}.register-link a{color:#1769d1;font-weight:bold;text-decoration:none}.register-card{max-width:560px}.register-card .form-grid{margin-top:0}.register-card .form-group label{margin-top:13px}
 #toast{position:fixed;right:22px;bottom:22px;background:#163f6f;color:#fff;padding:12px 17px;border-radius:9px;box-shadow:0 10px 30px #0002;opacity:0;transform:translateY(15px);pointer-events:none;transition:.25s;z-index:99;font-size:13px}#toast.show{opacity:1;transform:none}
+
+.btn.alt{background:#e8f0fb;color:#1769d1}
+body.dark .btn.alt{background:#1d3250;color:#9cc4ff}
+.search{width:100%;padding:11px;margin:4px 0 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text)}
+.table-wrap{overflow-x:auto}
+@media print{.sidebar,.topbar,.no-print,.hamb{display:none!important}.main{margin:0!important;width:100%!important}.content{padding:0!important}}

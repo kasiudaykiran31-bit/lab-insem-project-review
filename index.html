@@ -17,10 +17,11 @@
     <input id="email" type="email" placeholder="Enter email" required>
     <label>Password</label>
     <input id="password" type="password" placeholder="Enter password" required>
+    <label style="display:flex;align-items:center;gap:6px;font-size:12px;margin:-4px 0 12px;cursor:pointer"><input type="checkbox" style="width:auto" onchange="document.getElementById('password').type=this.checked?'text':'password'"> Show password</label>
     <button class="btn primary full" type="submit">Login <span>→</span></button>
   </form>
   <div id="loginMsg" class="msg"></div>
-  <p class="register-link">New student? <a href="register.html">Create a student account</a></p>
+  <p class="register-link">New here? <a href="register.html">Create a student or parent account</a></p>
 </div>
 <script src="script.js"></script>
 </body>

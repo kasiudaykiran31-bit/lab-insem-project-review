@@ -10,15 +10,18 @@
 <div class="login-bg"><span></span><span></span><span></span></div>
 <div class="login-card register-card">
   <div class="logo-box">📝</div>
-  <h1>Create Student Account</h1>
-  <p class="sub">Create your own student account. You can register multiple students with different email IDs.</p>
+  <h1>Create Account</h1>
+  <p class="sub">Register as a Student, or as a Parent linked to a registered student.</p>
 
   <form id="registerForm">
+    <label>Account Type</label>
+    <select id="regType"><option value="student">Student</option><option value="parent">Parent</option></select>
+
     <label>Full Name</label>
     <input id="regName" type="text" placeholder="Enter full name" required>
 
-    <label>Student ID</label>
-    <input id="regId" type="text" placeholder="Example: 2500031331" required>
+    <div class="stu-only"><label>Student ID</label>
+    <input id="regId" type="text" placeholder="Example: 2500031331" required></div>
 
     <label>Email</label>
     <input id="regEmail" type="email" placeholder="Enter email" required>
@@ -26,7 +29,7 @@
     <label>Phone</label>
     <input id="regPhone" type="tel" placeholder="Enter phone number">
 
-    <label>Program</label>
+    <div class="stu-only"><label>Program</label>
     <select id="regProgram">
       <option>B.Tech CSE</option>
       <option>B.Tech ECE</option>
@@ -51,7 +54,9 @@
           <option>A</option><option>B</option><option>C</option><option>D</option>
         </select>
       </div>
-    </div>
+    </div></div>
+    <div class="par-only" style="display:none"><label>Linked Student Email</label>
+    <input id="regStudentEmail" type="email" placeholder="Email of the registered student"></div>
 <label>Password</label>
     <input id="regPassword" type="password" minlength="6" placeholder="Minimum 6 characters" required>
 
