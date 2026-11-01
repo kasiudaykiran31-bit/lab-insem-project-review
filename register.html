@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Register - Student Program System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+<div class="login-bg"><span></span><span></span><span></span></div>
+<div class="login-card register-card">
+  <div class="logo-box">📝</div>
+  <h1>Create Student Account</h1>
+  <p class="sub">Create your own student account. You can register multiple students with different email IDs.</p>
+
+  <form id="registerForm">
+    <label>Full Name</label>
+    <input id="regName" type="text" placeholder="Enter full name" required>
+
+    <label>Student ID</label>
+    <input id="regId" type="text" placeholder="Example: 2500031331" required>
+
+    <label>Email</label>
+    <input id="regEmail" type="email" placeholder="Enter email" required>
+
+    <label>Phone</label>
+    <input id="regPhone" type="tel" placeholder="Enter phone number">
+
+    <label>Program</label>
+    <select id="regProgram">
+      <option>B.Tech CSE</option>
+      <option>B.Tech ECE</option>
+      <option>B.Tech EEE</option>
+      <option>B.Tech AI & ML</option>
+      <option>BCA</option>
+    </select>
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Year</label>
+        <select id="regYear">
+          <option>1st Year</option>
+          <option selected>2nd Year</option>
+          <option>3rd Year</option>
+          <option>4th Year</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Section</label>
+        <select id="regSection">
+          <option>A</option><option>B</option><option>C</option><option>D</option>
+        </select>
+      </div>
+    </div>
+<label>Password</label>
+    <input id="regPassword" type="password" minlength="6" placeholder="Minimum 6 characters" required>
+
+    <label>Confirm Password</label>
+    <input id="regConfirm" type="password" minlength="6" placeholder="Re-enter password" required>
+
+    <button class="btn primary full" type="submit">Create Account</button>
+  </form>
+<div id="registerMsg" class="msg"></div>
+  <p class="register-link"><a href="index.html">← Back to Login</a></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Parent Dashboard - Student Program System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="side-brand"><div class="mini-logo">🎓</div><div><b>STUDENT PROGRAM</b><small>SYSTEM</small></div></div>
+  <div class="profile"><div class="avatar" id="parentAvatar">PA</div><div><b id="parentName">Parent</b><small>Parent Account</small></div></div>
+  <div class="menu-label">PARENT MENU</div>
+  <button class="nav active"><span>🏠</span>Dashboard</button>
+  <button class="nav" onclick="parentReport()"><span>📊</span>Student Report</button>
+  <button class="nav" onclick="parentNotices()"><span>📢</span>Notices</button>
+  <div class="side-bottom"><button class="nav logout-side" onclick="logout()"><span>↪️</span>Logout</button></div>
+</aside>
+<main class="main">
+<header class="topbar"><div><h2>Parent Dashboard</h2><small>Monitor student academic progress</small></div><div class="top-user"><div class="top-avatar">PA</div><b id="parentTopName">Parent</b></div></header>
+<section id="parentContent" class="content"></section>
+</main>
+</div>
+<div id="toast"></div>
+<script src="script.js"></script>
+<script>initParent();</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Student Program System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="side-brand">
+    <div class="mini-logo">🎓</div>
+    <div><b>STUDENT PROGRAM</b><small>SYSTEM</small></div>
+  </div>
+  <div class="profile">
+    <div class="avatar" id="avatar">UK</div>
+    <div><b id="sideName">Student</b><small id="sideId">STU0001</small></div>
+  </div>
+  <div class="menu-label">MAIN MENU</div>
+  <button class="nav active" data-page="dashboard"><span>🏠</span>Dashboard</button>
+  <button class="nav" data-page="profile"><span>👤</span>My Profile</button>
+  <button class="nav" data-page="academics"><span>📚</span>Academics</button>
+  <button class="nav" data-page="attendance"><span>🗓️</span>Attendance</button>
+  <button class="nav" data-page="results"><span>📊</span>Results</button>
+  <div class="menu-label">STUDENT SERVICES</div>
+  <button class="nav" data-page="fees"><span>💳</span>Fee Details</button>
+  <button class="nav" data-page="timetable"><span>🕘</span>Time Table</button>
+  <button class="nav" data-page="assignments"><span>📝</span>Assignments</button>
+  <button class="nav" data-page="notices"><span>📢</span>Notices</button>
+  <button class="nav" data-page="reports"><span>📄</span>Reports</button>
+  <div class="side-bottom"><button class="nav" id="darkBtn"><span>🌙</span>Dark Mode</button><button class="nav logout-side" onclick="logout()"><span>↪️</span>Logout</button></div>
+</aside>
+
+<main class="main">
+<header class="topbar">
+  <button class="hamb" id="hamb">☰</button>
+  <div><h2 id="pageTitle">Student Dashboard</h2><small>Welcome to Student Program System</small></div>
+  <div class="top-user"><button class="bell">🔔</button><div class="top-avatar" id="topAvatar">UK</div><b id="topName">Uday Kiran</b></div>
+</header>
+<section id="content" class="content"></section>
+</main>
+</div>
+<div id="toast"></div>
+<script src="script.js"></script>
+<script>initApp();</script>
+</body>
+</html>
